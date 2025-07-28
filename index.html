@@ -1,0 +1,568 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVista Pro - Next-Gen Analytics Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-chart-line text-primary-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-dark-800">TechVista Pro</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#features" class="text-dark-800 hover:text-primary-600 px-3 py-2 font-medium">Features</a>
+                    <a href="#solutions" class="text-dark-800 hover:text-primary-600 px-3 py-2 font-medium">Solutions</a>
+                    <a href="#pricing" class="text-dark-800 hover:text-primary-600 px-3 py-2 font-medium">Pricing</a>
+                    <a href="#testimonials" class="text-dark-800 hover:text-primary-600 px-3 py-2 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-dark-800 hover:text-primary-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#pricing" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden mobile-menu" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#features" class="block px-3 py-2 text-base font-medium text-dark-800 hover:text-primary-600 hover:bg-gray-50">Features</a>
+                <a href="#solutions" class="block px-3 py-2 text-base font-medium text-dark-800 hover:text-primary-600 hover:bg-gray-50">Solutions</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-dark-800 hover:text-primary-600 hover:bg-gray-50">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-dark-800 hover:text-primary-600 hover:bg-gray-50">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-dark-800 hover:text-primary-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 hero-content">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Transform Your Data Into Actionable Insights</h1>
+                    <p class="text-xl mb-8 opacity-90">TechVista Pro delivers powerful analytics and visualization tools to help you make smarter business decisions faster.</p>
+                    <div class="hero-buttons flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#pricing" class="btn btn-primary btn-lg">View Plans</a>
+                        <a href="#features" class="btn btn-outline-white btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Analytics Dashboard" class="rounded-lg shadow-2xl w-full max-w-md border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 mb-8">Trusted by innovative companies worldwide</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="text-3xl font-bold text-gray-400">Microsoft</div>
+                <div class="text-3xl font-bold text-gray-400">Google</div>
+                <div class="text-3xl font-bold text-gray-400">Amazon</div>
+                <div class="text-3xl font-bold text-gray-400">Apple</div>
+                <div class="text-3xl font-bold text-gray-400">Tesla</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-800 mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">TechVista Pro comes packed with everything you need to analyze, visualize, and act on your data.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">Real-time Analytics</h3>
+                    <p class="text-gray-600">Get instant insights with our lightning-fast processing engine that updates dashboards in real-time.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-secondary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-secondary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">Advanced Visualizations</h3>
+                    <p class="text-gray-600">Choose from 50+ chart types and customize every aspect to tell your data story effectively.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">AI-Powered Predictions</h3>
+                    <p class="text-gray-600">Our machine learning models identify patterns and predict future trends with 95% accuracy.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-secondary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-secondary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">Enterprise Security</h3>
+                    <p class="text-gray-600">Military-grade encryption, role-based access, and compliance with all major data protection standards.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">Seamless Integrations</h3>
+                    <p class="text-gray-600">Connect with 100+ data sources including Salesforce, Google Analytics, SQL databases, and more.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card animate-fade-in">
+                    <div class="w-14 h-14 bg-secondary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-secondary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3">Mobile Ready</h3>
+                    <p class="text-gray-600">Access all features from our iOS and Android apps with full offline capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-800 mb-4">Solutions for Every Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">TechVista Pro adapts to your specific business needs across all departments.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-briefcase text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3 text-center">Executive Team</h3>
+                    <p class="text-gray-600 mb-4 text-center">Get a 360° view of business performance with executive dashboards and KPI tracking.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Strategic decision support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Custom board reporting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Scenario modeling</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3 text-center">Marketing</h3>
+                    <p class="text-gray-600 mb-4 text-center">Measure campaign performance and optimize your marketing spend.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Multi-channel attribution</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Customer segmentation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>ROI forecasting</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-cogs text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-800 mb-3 text-center">Operations</h3>
+                    <p class="text-gray-600 mb-4 text-center">Streamline processes and identify efficiency opportunities.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Process mining</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Resource allocation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Supply chain analytics</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-800 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the plan that fits your needs. No hidden fees, cancel anytime.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="pricing-card animate-fade-in">
+                    <h3 class="text-xl font-bold text-dark-800 mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Perfect for small teams getting started</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-dark-800">$29</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Up to 10 users</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>5 data sources</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Basic dashboards</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times mr-2"></i>
+                            <span>No AI predictions</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times mr-2"></i>
+                            <span>No API access</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark">Get Started</a>
+                </div>
+                
+      <!-- Pro Plan (Featured) -->
+ <!-- Pro Plan (Featured) -->
+<div class="pricing-card featured relative bg-white text-gray-800 border border-gray-200 transform scale-105 z-10 shadow-lg">
+    <div class="absolute top-0 right-0 bg-secondary-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
+    <h3 class="text-xl font-bold mb-2">Professional</h3>
+    <p class="text-gray-600 mb-6">For growing businesses with advanced needs</p>
+    <div class="mb-6">
+        <span class="text-4xl font-bold">$99</span>
+        <span class="text-gray-600">/month</span>
+    </div>
+    <ul class="space-y-3 mb-8">
+        <li class="flex items-center">
+            <i class="fas fa-check text-secondary-600 mr-2"></i>
+            <span>Up to 50 users</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check text-secondary-600 mr-2"></i>
+            <span>Unlimited data sources</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check text-secondary-600 mr-2"></i>
+            <span>Advanced dashboards</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check text-secondary-600 mr-2"></i>
+            <span>AI predictions</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check text-secondary-600 mr-2"></i>
+            <span>API access</span>
+        </li>
+    </ul>
+    <a href="#contact" class="btn btn-primary w-full">Get Started</a>
+</div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card animate-fade-in">
+                    <h3 class="text-xl font-bold text-dark-800 mb-2">Enterprise</h3>
+                    <p class="text-gray-600 mb-6">For large organizations with custom needs</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-dark-800">Custom</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Unlimited users</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Unlimited data sources</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Custom dashboards</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Advanced AI</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary-600 mr-2"></i>
+                            <span>Dedicated support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark">Contact Sales</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-gray-600">
+                <p>All plans come with a 14-day free trial. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-800 mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join thousands of satisfied customers who transformed their business with TechVista Pro.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-800">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">CTO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"TechVista Pro has revolutionized how we analyze customer data. The predictive analytics helped us increase conversions by 35% in just three months."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-800">Michael Chen</h4>
+                            <p class="text-gray-500 text-sm">Director of Analytics, GlobalCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The implementation was seamless and our team was up and running in days. The visualizations are stunning and our executives love the dashboards."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 animate-fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-800">Emma Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Marketing Director, BrightFuture</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"We reduced our reporting time by 80% while gaining deeper insights. The customer support is exceptional - they truly care about our success."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- CTA Section -->
+<section class="cta-section py-20 bg-primary-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Data Strategy?</h2>
+        <p class="text-xl opacity-90 mb-8 max-w-3xl mx-auto">Join thousands of businesses that trust TechVista Pro for their analytics needs. Start your free 14-day trial today.</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#pricing" class="btn btn-primary btn-lg">Get Started Now</a>
+            <a href="#contact" class="btn btn-outline-white btn-lg">Schedule a Demo</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-800 mb-6">Have Questions? Get in Touch</h2>
+                    <p class="text-xl text-gray-600 mb-8">Our team is here to help you find the right solution for your business needs.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark-800">Email Us</h4>
+                                <p class="text-gray-600">support@techvistapro.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark-800">Call Us</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark-800">Visit Us</h4>
+                                <p class="text-gray-600">123 Tech Street, San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="form-input" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-primary-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">TechVista Pro</span>
+                    </div>
+                    <p class="text-gray-400">Empowering businesses with data-driven decisions since 2018.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Integrations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Updates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 TechVista Pro. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
